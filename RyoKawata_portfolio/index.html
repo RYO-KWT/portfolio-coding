@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryo Kawata - Portfolio.</title>
+    <meta name="description" content="Ryo Kawata - Portfolio.サイト">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/znr4nay.css">
+</head>
+
+<body>
+    <main>
+        <article>
+            <!--home↓-->
+            <section id="home" class="big-bg">
+                <header id="page-header">
+                    <h1 class="logo"><a href="index.html"><img src="images/Logo.svg" alt="HOME"></a></h1>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#service">Service</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a class="button" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="burger"></div>
+                    </nav>
+                </header>
+                <div class="home-content wrapper">
+                    <div class="page-title">
+                        <h2>Ryo Kawata Portfolio.</h2>
+                        <h3>Web Design</h3>
+                    </div>
+                </div>
+            </section>
+            <!--home↑-->
+            <!--about↓-->
+            <section id="about" class="wrapper">
+                <div class="sec-title">
+                    <h2>About</h2>
+                    <h3>私について</h3>
+                </div>
+                <div class="about-content">
+                    <img class="profile-img" src="images/profile_img.jpg" alt="Ryo Kawataプロフィール写真">
+                    <div class="about-info">
+                        <div class="about-text">
+                            <h2>Ryo Kawata</h2>
+                            <p>
+                                はじめまして、河田涼ともうします。<br>
+                                高校卒業後、食品製造業に従事しながら音楽活動を行ってきました。
+                            </p>
+                            <p>
+                                クリエイティブな世界に憧れ、一度きりの人生だからこそ、自分の好きなことにチャレンジしたいと思い活動を開始しました。
+                            </p>
+                        </div>
+                        <div class="skills">
+                            <h2>Software skill</h2>
+                            <ul class="skill-icons">
+                                <li><img src="images/skill-icons_01.svg" alt="Illustrator"></li>
+                                <li><img src="images/skill-icons_02.svg" alt="Photoshop"></li>
+                                <li><img src="images/skill-icons_03.svg" alt="Premiere Pro"></li>
+                                <li><img src="images/skill-icons_04.svg" alt="Xd"></li>
+                                <li><img src="images/skill-icons_05.svg" alt="Figma"></li>
+                                <li><img src="images/skill-icons_06.svg" alt="HTML"></li>
+                                <li><img src="images/skill-icons_07.svg" alt="CSS"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--about↑-->
+            <!--service↓-->
+            <section id="service" class="wrapper">
+                <div class="sec-title">
+                    <h2>Service</h2>
+                    <h3>私にできること</h3>
+                </div>
+                <ul class="service-card">
+                    <li class="card-item">
+                        <img src="images/service-img_01.png" alt="Graphic Design">
+                        <div class="card-info">
+                            <h2>Graphic Design</h2>
+                            <p>
+                                Illustrator Photoshopを使用して、バナー サムネイル アイキャッチ SNSアイコン ロゴデザインなど、各種の投稿用画像を制作いたします。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <img src="images/service-img_02.png" alt="Web Design">
+                        <div class="card-info">
+                            <h2>Web Design</h2>
+                            <p>
+                                Figma XD その他Adobe製品のデザインツールを使用して、魅力的なWebサイトを制作いたします。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <img src="images/service-img_03.png" alt="HTML/CSS">
+                        <div class="card-info">
+                            <h2>HTML/CSS</h2>
+                            <p>
+                                デザインカンプから、HTML/CSSで静的サイトをコーディングいたします。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--service↑-->
+            <!--works↓-->
+            <section id="works" class="wrapper">
+                <div class="sec-title">
+                    <h2>Works</h2>
+                    <h3>制作実績</h3>
+                </div>
+
+                <div class="works-button">
+                    <a class="button" href="works.html">もっと見る</a>
+                </div>
+            </section>
+            <!--works↑-->
+        </article>
+    </main>
+    <!--footer↓-->
+    <footer id="footer">
+        <small>&copy; 2024 RyoKawata Portfolio.</small>
+        <nav>
+            <ul class="footer-menu">
+                <li class="sns-icon"><a href="#"><img src="images/footer_icon01.png" alt="X"></a></li>
+                <li class="sns-icon"><a href="#"><img src="images/footer_icon02.png" alt="instagram"></a></li>
+                <li><a class="button" href="index.html">Topへ戻る</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <!--footer↑-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(".burger").click(function () {
+            $(".burger").toggleClass("open");
+            $(".menu").toggleClass("open");
+        });
+    </script>
+</body>
+
+</html>
