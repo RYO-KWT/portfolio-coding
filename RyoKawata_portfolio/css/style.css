@@ -82,7 +82,7 @@ img {
 }
 
 .menu li {
-    padding: 4px 32px;
+    padding: 0px 32px;
     border-right: 1px solid #000;
 }
 
@@ -94,7 +94,18 @@ img {
     border-right: none;
     padding: 0;
 }
-
+.menu li:nth-child(5) {
+    border-right: none;
+}
+.menu li:nth-child(6) {
+    border-right: none;
+}
+.sns-icon {
+    width: 20px;
+    height: 20px;
+    line-height: 1px;
+    display: none;
+}
 @media screen and (max-width:767px) {
     .burger {
         width: 40px;
@@ -103,36 +114,54 @@ img {
         background-size: 24px;
         background-position: center;
         background-repeat: no-repeat;
-        margin-left: 32px;
+        border-radius: 4px;
         cursor: pointer;
         position: relative;
         z-index: 200;
     }
 
     .burger:hover {
-        background-color: #BBB;
-        opacity: 0.5;
+        background-color: #DDD;
     }
 
-    .menu {
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        background-color: #fff;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        display: none;
+    .menu.open {
+        display: flex;
+    }
+    .sns-icon.open {
+        display: flex;
     }
 
     .burger.open {
         background-image: url(../images/close.svg);
     }
 
-    .menu.open {
-        display: flex;
+    .menu {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: #ccc;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
     }
+    .menu li {
+        padding: 0px;
+        border: none;
+    }
+    .menu .button {
+        color: #000;
+        background: none;
+        padding: 0;
+    }
+    .menu a {
+        font-size: 1.5rem;
+    }
+
 }
 
 /*header↑*/
@@ -440,13 +469,13 @@ input[type="submit"] {
     font-style: normal;
 }
 
-.sns-icon {
+.footer-icon {
     width: 20px;
     height: 20px;
     line-height: 1px;
 }
 
-.sns-icon a {
+.footer-icon a {
     display: block;
 }
 

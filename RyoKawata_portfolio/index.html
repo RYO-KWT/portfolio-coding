@@ -23,6 +23,8 @@
                             <li><a href="index.html#service">Service</a></li>
                             <li><a href="works.html">Works</a></li>
                             <li><a class="button" href="contact.html">Contact</a></li>
+                            <li class="sns-icon"><a href="#"><img src="images/X-logo.png" alt="x"></a></li>
+                            <li class="sns-icon"><a href="#"><img src="images/Instagram-logo.png" alt="Instagram"></a>
                         </ul>
                         <div class="burger"></div>
                     </nav>
@@ -113,7 +115,6 @@
                     <h2>Works</h2>
                     <h3>制作実績</h3>
                 </div>
-
                 <div class="works-button">
                     <a class="button" href="works.html">もっと見る</a>
                 </div>
@@ -126,8 +127,8 @@
         <small>&copy; 2024 RyoKawata Portfolio.</small>
         <nav>
             <ul class="footer-menu">
-                <li class="sns-icon"><a href="#"><img src="images/footer_icon01.png" alt="X"></a></li>
-                <li class="sns-icon"><a href="#"><img src="images/footer_icon02.png" alt="instagram"></a></li>
+                <li class="footer-icon"><a href="#"><img src="images/X-logo.png" alt="X"></a></li>
+                <li class="footer-icon"><a href="#"><img src="images/Instagram-logo.png" alt="instagram"></a></li>
                 <li><a class="button" href="index.html">Topへ戻る</a></li>
             </ul>
         </nav>
@@ -139,6 +140,7 @@
         $(".burger").click(function () {
             $(".burger").toggleClass("open");
             $(".menu").toggleClass("open");
+            $(".sns-icon").toggleClass("open");
         });
     </script>
 </body>
